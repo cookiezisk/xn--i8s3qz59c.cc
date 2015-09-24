@@ -1,0 +1,214 @@
+@charset "utf-8";
+@media (max-width: 960px) {
+  .navbar-wrapper{
+    top: 0;
+  }
+}
+*{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+body{
+  background-color: #efefef;
+  word-wrap: break-word;
+  color: #34495e;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+h1, h2, h3{
+  line-height: 1.6em;
+  font-weight: bold;
+}
+a, a:hover {
+  text-decoration: none;
+}
+a, a:hover, a:visited{
+  color: #ee9285;
+}
+a:hover{
+  opacity: .7;
+}
+
+#wrap {
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
+#header{
+  margin-top: 20px;
+}
+#logo{
+  width: 130px;
+  margin-bottom: -10px;
+}
+#title{
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+#slogan{
+  max-width: 95%;
+  color: #ee9285;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: #fff;
+  font-size: 16px;
+  margin-top: 0px;
+}
+#nav{
+  margin-top: 10px;
+}
+#nav > .container{
+  padding-left: 0;
+  padding-right: 0;
+}
+#nav > .container > .navbar .container{
+  padding-right: 0;
+}
+#nav .container>.navbar-header{
+  margin-left: 10px;
+}
+.navbar-form {
+  padding: 0;
+}
+#navbar li{
+  list-style: none;
+}
+
+#content {
+  text-align: left;
+  zoom: 1;
+  padding: 40px 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+#content .m-post{
+  padding: 40px 40px 35px;
+  margin: 40px 0 0;
+  background: #fff;
+}
+#content .title{
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#content img {
+  max-width: 1090px;
+}
+.m-post .info{
+  margin: 0px 0 -20px;
+  text-align: right;
+  font-size: 12px;
+}
+.readmore{
+  font-size: 14px;
+}
+
+#pagenavi{
+  margin: 60px 0 0;
+  text-align: center;
+}
+#pagenavi a, #pagenavi span, #pagenavi em{
+  margin: 10px 10px 0;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 14px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 10px;
+}
+#pagenavi span, #pagenavi em{
+  background: transparent;
+}
+
+#footerbar{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+}
+#footerbar #link a {
+  margin-left: 10px;
+}
+#footerbar ul li {
+  list-style: none;
+}
+
+#article-info{
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#contentleft .nextlog{
+  margin: 30px 0;
+  font-size: 18px;
+}
+#contentleft .nextlog .left{
+  float: left;
+}
+#contentleft .nextlog .right{
+  float: right;
+}
+
+/*===兼容Emlog表情插件===*/
+#emotion{
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+#contentleft .comment-post p{margin:5px 0px}
+#contentleft .comment-post .cancel-reply{float:right;font-size:16px;cursor:pointer; _cursor:hand;padding-right:10%}
+#contentleft .comment-post .cancel-reply:hover{text-decoration:underline}
+#contentleft .comment-post small{font-size:16px; color:#999}
+#contentleft .comment-post #comment{
+  width:96%;
+  margin: 0;
+  border:1px #b6b6b6 solid;
+  font-size:16px;
+  color:#333
+}
+#contentleft .comment-post .input{width:100px}
+#contentleft .comment{
+  margin: 20px 0;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 16px;
+  border-top: 10px #ee9285 solid;
+  overflow:hidden;
+  color:#333;
+  height:100%;
+  zoom:1
+}
+#contentleft .comment span{color:#ff7a15;}
+#contentleft .comment .comment-time{color:#999999; display:inline; font-size:10px;}
+#contentleft .comment .avatar{float:left;margin:5px}
+#contentleft .comment .comment-info{float:left;width:90%}
+#contentleft .comment .comment-content{margin:8px 0px 0px 0px;}
+#contentleft .comment .comment-reply{float:right;font-size:16px;cursor:pointer; _cursor:hand;}
+#contentleft .comment .comment-reply:hover{text-decoration:underline}
+#contentleft .comment-children{
+  margin: 5px 0;
+  clear:both;
+  border: 1px dashed #ee9285;
+  border-left: 5px solid #ee9285;
+  padding: 5px;
+}
+#contentleft .comment .comment-post{width:90%;margin:15px auto}
+
+#rss img{
+  height: 32px;
+  margin-right: 10px;
+}
+
+#related_log{
+  font-size: 16px;
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px dashed #5cb85c;
+  border-left: 5px solid #5cb85c;
+}
