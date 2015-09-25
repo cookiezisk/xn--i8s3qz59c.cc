@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Comment;
+use App\Article;
 
 use Redirect, Input;
 
@@ -13,7 +14,7 @@ class CommentsController extends Controller {
 
 	public function index()
 	{
-		return view('admin.comments.index')->withComments(Comment::all());
+		return view('admin.comments.index')->withComments(Comment::all())->withArticles(Article::all());
 	}
 
 	public function edit($id)

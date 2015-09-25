@@ -9,20 +9,20 @@
 <meta charset="utf-8"/>
 <title>a make down editor</title>
 
-<link type="text/css" rel="stylesheet" href="/js/markdownsk/css/font-awesome/css/font-awesome.css"/>
-<link type="text/css" rel="stylesheet" href="/js/markdownsk/css/codemirror.css"/>
-<link type="text/css" rel="stylesheet" href="/js/markdownsk/css/highlight/xcode.css"/>
-<link type="text/css" rel="stylesheet" href="/js/markdownsk/css/amd.css"/>
-<link type="text/css" rel="stylesheet" href="/js/markdownsk/css/markdown.css"/>
+{{ HTML::style('/js/markdownsk/css/font-awesome/css/font-awesome.css') }}
+{{ HTML::style('/js/markdownsk/css/codemirror.css') }}
+{{ HTML::style('/js/markdownsk/css/highlight/xcode.css') }}
+{{ HTML::style('/js/markdownsk/css/amd.css') }}
+{{ HTML::style('/js/markdownsk/css/markdown.css') }}
 
-<script src="/js/markdownsk/js/codemirror/lib/codemirror.js"></script>
-<script src="/js/markdownsk/js/codemirror/mode/markdown/markdown.js"></script>
-<script src="/js/markdownsk/js/hogan-3.0.1.min.js"></script>
-<script src="/js/markdownsk/js/marked-0.3.2.min.js"></script>
-<script src="/js/markdownsk/js/highlight-8.1.0.min.js"></script>
-<script src="/js/markdownsk/js/pie/pie.js"></script>
-<script src="/js/markdownsk/js/pie/unit.js"></script>
-<script src="/js/markdownsk/js/pie/amarkdown.js"></script>
+{{ HTML::script('/js/markdownsk/js/codemirror/lib/codemirror.js') }}
+{{ HTML::script('/js/markdownsk/js/codemirror/mode/markdown/markdown.js') }}
+{{ HTML::script('/js/markdownsk/js/hogan-3.0.1.min.js') }}
+{{ HTML::script('/js/markdownsk/js/marked-0.3.2.min.js') }}
+{{ HTML::script('/js/markdownsk/js/highlight-8.1.0.min.js') }}
+{{ HTML::script('/js/markdownsk/js/pie/pie.js') }}
+{{ HTML::script('/js/markdownsk/js/pie/unit.js') }}
+{{ HTML::script('/js/markdownsk/js/pie/amarkdown.js') }}
 
 </head>
 <body>
@@ -33,7 +33,7 @@
 (function (PIE) {
 window.addEventListener('load', function () {
     PIE.makeAMarkdown(document.getElementById('amd-editor'), {
-      imgAction: '/image',
+        imgAction: '/image',
         pubAction: '/',
         titleName: 'title',
         textName: 'text'
@@ -49,9 +49,7 @@ window.addEventListener('load', function () {
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
         <div class="panel-heading">新增 Article</div>
-
         <div class="panel-body">
-
           @if (count($errors) > 0)
             <div class="alert alert-danger">
               <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -62,7 +60,6 @@ window.addEventListener('load', function () {
               </ul>
             </div>
           @endif
-
           <form action="{{ URL('admin/articles') }}" method="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="text" name="title" class="form-control" required="required">
@@ -71,7 +68,6 @@ window.addEventListener('load', function () {
             <br>
             <button class="btn btn-lg btn-info">新增 Article</button>
           </form>
-
         </div>
       </div>
     </div>
