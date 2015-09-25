@@ -15,6 +15,7 @@ return [
 
 	'debug' => env('APP_DEBUG'),
 
+	'Debugbar' => Barryvdh\Debugbar\Facade::class,
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -39,7 +40,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Shanghai',
 
 	/*
 	|--------------------------------------------------------------------------

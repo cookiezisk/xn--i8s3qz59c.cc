@@ -92,6 +92,17 @@ class ArticlesController extends Controller {
 	}
 
 	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function markdown($id)
+	{
+		return view('admin.articles.markdown')->withArticle(Article::find($id));
+	}
+
+	/**
 	 * Remove the specified resource from storage.
 	 *
 	 * @param  int  $id

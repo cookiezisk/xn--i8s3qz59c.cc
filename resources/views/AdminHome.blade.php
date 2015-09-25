@@ -11,6 +11,7 @@
 
         <a href="{{ URL('admin/pages/create') }}" class="btn btn-lg btn-primary">新增Page</a>
         <a href="{{ URL('admin/articles/create') }}" class="btn btn-lg btn-primary">新增Article</a>
+        <a href="{{ URL('admin/articles/markdown') }}" class="btn btn-lg btn-primary">编辑器功能</a>
 
           @foreach ($pages as $page)
             <hr>

@@ -21,8 +21,6 @@
             <th class="col-lg-1">编辑</th>
             <th class="col-lg-1">删除</th>
           </tr>
-          @var_dump($articles);
-          @exit();
           @foreach ($articles as $article)
             <tr class="row">
               <td class="col-lg-6">
