@@ -1,12 +1,42 @@
 @extends('app')
 
 @section('content')
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">首页</a></li>
+  <li><a href="#profile">Profile</a></li>
+  <li><a href="#messages">Messages</a></li>
+  <li><a href="#settings">Settings</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="home">...</div>
+  <div class="tab-pane" id="profile">...</div>
+  <div class="tab-pane" id="messages">...</div>
+  <div class="tab-pane" id="settings">...</div>
+</div>
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script>
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
-        <div class="panel-heading">管理评论</div>
-
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#comment-type">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">管理评论</a>
+          </div>
+          <div class="collapse navbar-collapse" id="comment-type-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Pages</a></li>
+              <li><a href="#">Articles</a></li>
+            </ul>
+          </div>
+        </nav>
         <div class="panel-body">
 
         <table class="table table-striped">

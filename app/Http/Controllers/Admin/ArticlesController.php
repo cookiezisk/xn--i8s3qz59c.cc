@@ -99,7 +99,8 @@ class ArticlesController extends Controller {
 	 */
 	public function markdown($id)
 	{
-		return view('admin.articles.markdown')->withArticle(Article::find($id));
+		return 'qwer';
+		// return view('admin.articles.markdown')->withArticle(Article::find($id));
 	}
 
 	/**

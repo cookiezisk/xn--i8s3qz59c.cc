@@ -1,7 +1,3 @@
-<pre>
-<?php var_dump($articles); ?>
-</pre>
-
 @extends('app')
 
 @section('content')
@@ -17,13 +13,13 @@
           <tr class="row">
             <th class="col-lg-4">Content</th>
             <th class="col-lg-2">User</th>
-            <th class="col-lg-4">Page</th>
+            <th class="col-lg-4">Article</th>
             <th class="col-lg-1">编辑</th>
             <th class="col-lg-1">删除</th>
           </tr>
           @foreach ($articles as $article)
             <tr class="row">
-              <td class="col-lg-6">
+              <td class="col-lg-4">
                 {{ $article->body }}
               </td>
               <td class="col-lg-2">
@@ -38,7 +34,7 @@
               </td>
               <td class="col-lg-4">
                 <a href="{{ URL('articles/'.$article->article_id) }}" target="_blank">
-                  {{ App\Page::find($article->article_id)->title }}
+                  {{ App\Comment::find($article->article_id)->title }}
                 </a>
               </td>
               <td class="col-lg-1">

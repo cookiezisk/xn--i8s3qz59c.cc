@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>小王子</title>
 
-  <link href="/css/app.css" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/markdown/markdown.css" rel="stylesheet">
+  {{ HTML::style('css/app.css') }}
+  {{ HTML::style('css/main.css') }}
+  {{ HTML::style('css/markdown/markdown.css') }}
+
+  {{ HTML::script('js/jquery/jquery.js') }}
 
   <!-- Fonts -->
   <link href='http://fonts.useso.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
